@@ -19,23 +19,12 @@ var Box = React.createClass({
   },
   
   getData: function() {
-    var metricCount = 0;
-
-    if (this.state !== null) {
-      if (this.state.metric !== undefined) {
-        var metricList = this.state.metric.split(',');
-        var datesList = this.state.dates.split(',');
-        var today = this.props.startOfDay;
-
-        for (var i = 0; i < metricList.length; i++) {
-          if (datesList[i] === today) {
-            metricCount = metricList[i];
-          }
-        }
-      }
+    // Demo version:
+    if(this.props.storageType === "step") {
+      return 7638;
+    } else {
+      return 7;
     }
-
-    return metricCount;
   },
 
   shouldComponentUpdate: function() {
