@@ -175,7 +175,7 @@ var Landscape = React.createClass({
   render: function() {
     return (
       <div className={'time-of-day ' + this.state.timeOfDay}>
-        <SignInSplash auth={this.props.auth} user={this.props.userInfo} />
+        // <SignInSplash auth={this.props.auth} user={this.props.userInfo} />
 
         <div className="bg">
           <img src="./images/landscape/clouds-1.png" alt="" className="clouds cloud-1"/>
