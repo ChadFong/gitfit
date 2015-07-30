@@ -571,6 +571,7 @@ $mouth-happy-seconds: 6s;
 
 @mixin right-eye-blink {
   -webkit-animation: right-eye-blink $blink-seconds linear infinite;
+  animation-delay: $blink-delay;
 }
 
 // Left Arm Wave
